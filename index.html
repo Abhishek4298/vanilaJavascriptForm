@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <h2>Form Data</h2>
+    <form id="myForm" action="#">
+      <span>Name</span>
+      <input type="Name" placeholder="enter your Name" id="name" />
+    <span id="error-name"></span>
+      <span>Age</span>
+      <input type="number" placeholder="Age" id="age" />
+      <span id="error-age"></span>
+      <span>State</span>
+      <input type="text" placeholder="Enter State" id="state" />
+      <span id="error-state"></span>
+      <input type="button" onclick="storeUserData();" value="Submit form" />
+    </form>
+    <br />
+    <br />
+    <!-- <button onclick="populateChild();">Get Users</button> -->
+
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>State</th>
+        </tr>
+      </thead>
+
+      <tbody id="user-table-data">
+        <!-- THIS SHOULD BE POPULATED -->
+      </tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
